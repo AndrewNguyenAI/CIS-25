@@ -10,32 +10,36 @@ public:
 
     void saveToFile() {
         ofstream out("items.txt");
-        out << name << "," << quantity;
-        out.close();
+        if (out.is_open()) {
+            out << name << "," << quantity << endl;
+            out.close();
+            cout << "Item saved to file." << endl;
+        } else {
+            cout << "Unable to open file for writing." << endl;
+        }
     }
 
     void loadFromFile() {
         ifstream in("items.txt");
-        string line;
-        getline(in, line);
-        in.close();
-
-        size_t pos = line.find(',');
-        name = line.substr(0, pos);
-        quantity = stoi(line.substr(pos + 1));
-
-        cout << "Name: " << name << endl;
-        cout << "Quantity: " << quantity << endl;
+        if (in.is_open()) {
+            string line;
+            while (getline(in, line)) {
+                cout << "File content: " << line << endl;
+            }
+            in.close();
+        } else {
+            cout << "Unable to open file for reading." << endl;
+        }
     }
 };
 
 int main() {
-    Item item;
-    item.name = "Apple";
-    item.quantity = 5;
+    Item tool;
+    tool.name = "Screwdriver";
+    tool.quantity = 10;
 
-    item.saveToFile();
-    item.loadFromFile();
+    tool.saveToFile();
+    tool.loadFromFile();
 
     return 0;
 }
