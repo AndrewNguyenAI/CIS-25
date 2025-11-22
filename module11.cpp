@@ -6,13 +6,11 @@ class Product {
 private:
     int id;
     string name;
-    double price;
+    float price;
 
 public:
-    Product(int i, string n, double p) {
-        id = i;
-        name = n;
-        price = p;
+    Product(int i, string n, float p) : id(i), name(n), price(p) {
+        cout << "Constructor called\n";
     }
 
     ~Product() {
@@ -20,14 +18,13 @@ public:
     }
 
     void printDetails() {
-        cout << "ID: " << id << endl;
-        cout << "Name: " << name << endl;
-        cout << "Price: " << price << endl;
+        cout << "ID: " << id << ", Name: " << name << ", Price: $" << price << endl;
     }
 };
 
 int main() {
-    Product p(1, "Laptop", 999.99);
-    p.printDetails();
+    Product item(101, "Laptop", 999.99);
+    item.printDetails();
+
     return 0;
 }
