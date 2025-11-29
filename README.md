@@ -1,19 +1,13 @@
-Week 5
+Week 6
 -------
 
 
 
-Module 6 – Strings and Classes
+Module 6 – Pointers and Memory
 
-File: module6.cpp
+File: module7.cpp
 
-This program uses a class named Item with name and quantity. It saves the item to a file called items.txt and then reads and prints the file contents.
-
-
+This program creates a list of 100 items and uses binary search to quickly find an item by its ID entered by the user.
 
 
-Module 11 – Constructors and Destructors
 
-File: module11.cpp
-
-This program uses a class named Product with id, name, and price. The constructor and destructor print messages, and printDetails() displays the product information.
