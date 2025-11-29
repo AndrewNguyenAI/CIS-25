@@ -3,7 +3,7 @@ Week 6
 
 
 
-Module 6 – Pointers and Memory
+Module 7 – Pointers and Memory
 
 File: module7.cpp
 
