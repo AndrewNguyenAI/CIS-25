@@ -6,12 +6,12 @@ Module 8 - Bank Account Simulation
 BankAccount.cpp
 -------
 
-This program creates a simple BankAccount class that tracks the user's balance. 
-It includes functions for depositing money, making purchases, displaying the current balance, 
-and saving each transaction to a text file.
+This program creates a simple BankAccount class that keeps track of the user's money.
+It lets the user deposit money, make purchases, see the current balance, 
+and save each transaction to a text file.
 
-The main function performs an initial deposit, makes several purchases, adds another deposit, 
-prints the final balance, and writes all actions to transactions.txt.
+The main function makes a starting deposit, does several purchases, makes another deposit,
+shows the final balance, and writes all actions to transactions.txt.
 
 transactions.txt
 -------
