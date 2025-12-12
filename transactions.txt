@@ -1,0 +1,8 @@
+Deposit: +250.000000
+Purchase (Coffee): -4.500000
+Purchase (Book): -25.000000
+Purchase (Groceries): -45.300000
+Purchase (Gas): -35.000000
+Deposit: +50.000000
+Purchase (Shoes): -80.000000
+Failed Purchase (Headphones): -200.000000
